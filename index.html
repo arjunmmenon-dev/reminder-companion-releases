@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10121a">
+<meta name="description" content="Reminder Companion is a friendly desktop water reminder with animated characters, gentle nudges, and personal touches.">
+<title>Reminder Companion — Your tiny desktop buddy</title>
+<style>
+:root{color-scheme:dark;--bg:#10121a;--panel:#181b27;--panel2:#202436;--text:#f5f4ee;--muted:#a6acc0;--mint:#a8f3c8;--pink:#ffb5d2;--yellow:#ffe08a;--line:#ffffff18;--pixel:4px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#303452 0%,#171a27 34%,var(--bg) 72%);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);line-height:1.55}a{color:inherit;text-decoration:none}button,a{ -webkit-tap-highlight-color:transparent}
+.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.03em}.logo{width:42px;height:42px;border:2px solid #0d1018;background:var(--mint);color:#10121a;display:grid;place-items:center;border-radius:12px;box-shadow:4px 4px 0 #0008;font-size:21px}.brand small{display:block;color:var(--muted);font-weight:500;letter-spacing:.02em;font-size:11px}
+.nav{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:14px}.nav a:hover{color:var(--mint)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border:2px solid #0b0d13;border-radius:12px;background:var(--mint);color:#11151a;font-weight:800;box-shadow:4px 4px 0 #0009;transition:transform .15s,box-shadow .15s}.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 #0009}.btn.secondary{background:#252a3b;color:var(--text);border-color:#41465c;box-shadow:4px 4px 0 #0005}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #ffffff20;background:#ffffff08;border-radius:999px;color:var(--mint);font-size:12px;font-weight:750;letter-spacing:.06em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--mint);border-radius:2px;box-shadow:0 0 12px #a8f3c8}
+.hero{padding:58px 0 82px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;min-height:570px}.hero h1{font-size:clamp(42px,5.8vw,72px);line-height:1.02;letter-spacing:-.065em;margin:20px 0}.hero h1 span{color:var(--mint)}.lead{font-size:18px;color:var(--muted);max-width:530px}.actions{display:flex;gap:13px;flex-wrap:wrap;margin:28px 0 20px}.micro{font-size:12px;color:#858da4}
+.stage{position:relative;min-height:450px;border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(145deg,#282c43dd,#171a28ee);box-shadow:0 30px 80px #0004;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;padding:0 10px 18px}.stage:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#ffffff15 1px,transparent 1px);background-size:16px 16px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}.stage:after{content:"";position:absolute;bottom:27px;left:12%;right:12%;height:18px;background:#090b12;border-radius:50%;filter:blur(10px)}
+.character{position:relative;z-index:1;height:410px;width:100%;display:flex;justify-content:center;align-items:flex-end}.character img{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 12px 10px #0004);image-rendering:auto}
+.bubble{position:absolute;z-index:3;top:27px;left:24px;max-width:230px;padding:14px 16px;background:var(--mint);color:#171a22;border:2px solid #10121a;border-radius:14px 14px 14px 4px;box-shadow:4px 4px 0 #080a10;font-weight:800;font-size:14px}.bubble:after{content:"";position:absolute;bottom:-10px;left:18px;width:14px;height:14px;background:var(--mint);border-left:2px solid #10121a;border-bottom:2px solid #10121a;transform:skewY(-35deg)}
+.float-tag{position:absolute;z-index:3;right:18px;bottom:22px;padding:10px 12px;background:#22273a;border:1px solid #ffffff26;border-radius:12px;color:#e6e9f3;font-size:12px;box-shadow:3px 3px 0 #0005}.float-tag b{color:var(--yellow)}
+.trust{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;color:#aeb4c7;font-size:13px;padding:18px 0 42px}.trust span{display:flex;align-items:center;gap:8px}.trust i{color:var(--mint);font-style:normal}
+section{padding:64px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.eyebrow{color:var(--pink);font-size:12px;text-transform:uppercase;letter-spacing:.16em;font-weight:850}.section-head h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.05em;line-height:1.1;margin:12px 0}.section-head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#202437,#171a26);border-radius:18px;box-shadow:4px 4px 0 #0003}.feature .iconbox{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#a8f3c81c;border:1px solid #a8f3c840;font-size:23px;margin-bottom:20px}.feature h3{margin:0 0 8px;font-size:18px}.feature p{margin:0;color:var(--muted);font-size:14px}
+.friends{display:grid;grid-template-columns:1fr 1fr;gap:18px}.friend-card{position:relative;min-height:360px;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:linear-gradient(155deg,#282d42,#171a26);display:flex;align-items:flex-end;justify-content:center;padding:18px 14px 0}.friend-card img{height:330px;max-width:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 12px 8px #0005)}.friend-label{position:absolute;top:18px;left:18px;background:#10121adf;border:1px solid #ffffff20;border-radius:10px;padding:8px 11px;font-size:12px;font-weight:800}.friend-label span{color:var(--mint)}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border:1px solid var(--line);border-radius:16px;background:#ffffff05}.num{font-size:12px;color:var(--yellow);font-weight:900;letter-spacing:.1em}.step h3{margin:8px 0}.step p{color:var(--muted);font-size:14px;margin:0}
+.cta{padding:44px;border:1px solid #a8f3c840;border-radius:24px;background:radial-gradient(ellipse at 100% 0%,#a8f3c81a,transparent 55%),#1a1e2b;text-align:center;box-shadow:6px 6px 0 #0003}.cta h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.05em;margin:0 0 10px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:560px}
+footer{padding:32px 0 42px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#858da4;font-size:12px}.footer-brand{color:var(--text);font-weight:800}
+@media(max-width:800px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:28px}.hero-copy{text-align:center}.lead{margin:auto}.actions{justify-content:center}.stage{min-height:400px}.character{height:360px}.features{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr}.friends{grid-template-columns:1fr}.friend-card{min-height:340px}.friend-card img{height:315px}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.hero h1{font-size:46px}.features{grid-template-columns:1fr}.stage{min-height:360px}.character{height:330px}.bubble{left:12px;top:15px;max-width:185px;font-size:12px}.float-tag{right:10px;bottom:10px}.cta{padding:30px 20px}.friend-card{min-height:310px}.friend-card img{height:290px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <a class="brand" href="#" aria-label="Reminder Companion home"><span class="logo">✦</span><span>Reminder Companion<small>A little buddy for better habits</small></span></a>
+  <nav class="nav"><a href="#features">Features</a><a href="#friends">Meet your buddies</a><a href="#how">How it works</a></nav>
+  <a class="btn" href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe">Get the app ↗</a>
+</header>
+<main>
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <div class="pill"><span class="dot"></span> Your desktop, a little more human</div>
+      <h1>Small reminders.<br><span>Better you.</span></h1>
+      <p class="lead">Meet your tiny desktop companion — friendly animated characters that nudge you to drink water, take a pause, and build a healthier routine without breaking your flow.</p>
+      <div class="actions"><a class="btn" href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe">↓ Download for Windows</a><a class="btn secondary" href="https://github.com/arjunmmenon-dev/reminder-companion/releases/tag/v0.1.0">View release notes ↗</a></div>
+      <div class="micro">Windows installer · v0.1.0 · Free to try</div>
+    </div>
+    <div class="stage">
+      <div class="bubble">Hey! 💧 Time for a water break?</div>
+      <div class="character"><img src="assets/friend-grey-shirt.png" alt="Animated desktop companion character holding a water bottle"></div>
+      <div class="float-tag">✦ <b>Gentle nudge</b> · no pressure</div>
+    </div>
+  </div>
+  <div class="wrap trust"><span><i>✦</i> Pick your character</span><span><i>✦</i> Personal greeting</span><span><i>✦</i> Quick Yes / Later actions</span><span><i>✦</i> Lightweight desktop app</span></div>
+  <section id="features"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Thoughtful by design</div><h2>Not another noisy notification.</h2><p>A little personality goes a long way. Reminder Companion keeps hydration nudges friendly, simple, and easy to respond to.</p></div>
+    <div class="features">
+      <article class="feature"><div class="iconbox">💧</div><h3>Water reminders</h3><p>Gentle prompts to help you remember to drink water while you work or play.</p></article>
+      <article class="feature"><div class="iconbox">🧑‍🎤</div><h3>Choose your buddy</h3><p>Switch between character options and give your desktop a companion that feels like you.</p></article>
+      <article class="feature"><div class="iconbox">👋</div><h3>Animated reactions</h3><p>Characters arrive and react to your choice, making each reminder feel more alive.</p></article>
+      <article class="feature"><div class="iconbox">🙂</div><h3>A personal hello</h3><p>Add your name for a warmer greeting, with a friendly default if you leave it blank.</p></article>
+      <article class="feature"><div class="iconbox">⏳</div><h3>“Later” is okay</h3><p>Choose to act now or postpone a reminder when you’re in the middle of something.</p></article>
+      <article class="feature"><div class="iconbox">🪟</div><h3>Lives on your desktop</h3><p>A compact desktop companion built with Tauri, Vue 3, TypeScript, and Rust.</p></article>
+    </div>
+  </div></section>
+  <section id="friends"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Meet the companions</div><h2>A little character. A lot of charm.</h2><p>Pick the personality that makes your reminders feel less like an alarm and more like a friendly hello.</p></div>
+    <div class="friends">
+      <article class="friend-card"><div class="friend-label"><span>01 /</span> The cheerful buddy</div><img src="assets/friend-red-dhoti.png" alt="Cheerful companion in a red shirt and traditional white dhoti holding a water bottle"></article>
+      <article class="friend-card"><div class="friend-label"><span>02 /</span> The calm buddy</div><img src="assets/friend-grey-shirt.png" alt="Stylish companion in a light shirt and beige trousers holding a water bottle"></article>
+    </div>
+  </div></section>
+  <section id="how"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">Easy does it</div><h2>Three tiny steps.</h2><p>No complicated routine. Just a friendly nudge when you need one.</p></div>
+    <div class="how">
+      <article class="step"><div class="num">STEP 01</div><h3>Install your buddy</h3><p>Download the Windows installer and set up Reminder Companion on your desktop.</p></article>
+      <article class="step"><div class="num">STEP 02</div><h3>Make it yours</h3><p>Choose a character and set your preferred personal greeting in the app settings.</p></article>
+      <article class="step"><div class="num">STEP 03</div><h3>Respond your way</h3><p>When a reminder appears, take a sip now or choose to come back to it later.</p></article>
+    </div>
+  </div></section>
+  <section><div class="wrap cta"><h2>Your next sip starts here. 💧</h2><p>Give your workday a little more personality. Meet your desktop buddy and make hydration reminders something you don’t mind seeing.</p><a class="btn" href="https://github.com/arjunmmenon-dev/reminder-companion/releases/download/v0.1.0/Reminder_companion_0.1.0_x64-setup.exe">Download Reminder Companion ↗</a></div></section>
+</main>
+<footer class="wrap"><div><div class="footer-brand">✦ Reminder Companion</div><div>A tiny nudge toward a healthier habit.</div></div><div>Made with care · Windows release v0.1.0</div></footer>
+</body></html>
