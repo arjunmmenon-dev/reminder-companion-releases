@@ -20,9 +20,8 @@ Reminder Companion is a desktop application designed to make water reminders mor
 
 Download the latest version of Reminder Companion for Windows:
 
-**[⬇️ Download Reminder Companion for Windows](https://github.com/arjunmmenon-dev/reminder-companion/releases/latest)**
+**[⬇️ Download Reminder Companion for Windows]([https://github.com/arjunmmenon-dev/reminder-companion/releases/latest](https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe))**
 
-You can also browse all available versions on the [Releases page](https://github.com/arjunmmenon-dev/reminder-companion/releases).
 
 ## 🪟 Installation
 
