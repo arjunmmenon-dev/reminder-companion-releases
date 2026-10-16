@@ -14,7 +14,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:22p
 .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:-.03em}.logo{width:42px;height:42px;border:2px solid #0d1018;background:var(--mint);color:#10121a;display:grid;place-items:center;border-radius:12px;box-shadow:4px 4px 0 #0008;font-size:21px}.brand small{display:block;color:var(--muted);font-weight:500;letter-spacing:.02em;font-size:11px}
 .nav{display:flex;align-items:center;gap:26px;color:var(--muted);font-size:14px}.nav a:hover{color:var(--mint)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border:2px solid #0b0d13;border-radius:12px;background:var(--mint);color:#11151a;font-weight:800;box-shadow:4px 4px 0 #0009;transition:transform .15s,box-shadow .15s,background .2s,border-color .2s}.btn:hover:not(.soon){transform:translate(2px,2px);box-shadow:2px 2px 0 #0009}.btn.secondary{background:#252a3b;color:var(--text);border-color:#41465c;box-shadow:4px 4px 0 #0005}.btn.soon{opacity:.72;cursor:not-allowed;pointer-events:none;color:var(--muted)}.btn.soon .soon-badge{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:3px 7px;border-radius:999px;background:#ffffff10;color:#9aa3bb;border:1px solid #ffffff14}.os-icon{width:18px;height:18px;flex-shrink:0}
-.platform-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.platform-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.hero-primary-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.support-popover-wrap{position:relative;display:inline-flex}.btn.support-trigger{padding:11px 15px;font-size:14px;background:transparent;color:var(--muted);border-color:#ffffff28;box-shadow:none;font-weight:750}.btn.support-trigger:hover:not(.soon){transform:none;background:#ffffff08;color:var(--text);box-shadow:none;border-color:#ffffff40}.btn.compact{padding:10px 14px;font-size:13px}.support-popover{position:absolute;top:calc(100% + 10px);left:0;z-index:20;width:min(300px,calc(100vw - 48px));padding:16px;border:1px solid #ffffff22;border-radius:16px;background:#1e2231;box-shadow:0 16px 48px #0008,4px 4px 0 #0005;text-align:left}.support-popover.is-pay{width:min(320px,calc(100vw - 48px))}.support-popover[hidden]{display:none!important}.support-step[hidden]{display:none!important}.support-qr-instruction{margin:0 0 12px;font-size:13px;font-weight:650;color:var(--text);line-height:1.45}.support-qr-wrap{display:flex;align-items:center;justify-content:center;padding:14px;border-radius:14px;margin:0 0 14px;border:2px solid #ffffff20;min-height:200px}.support-qr-wrap.is-ready{background:#fff}.support-qr-wrap.is-loading{background:#252a3b;color:var(--muted);font-size:13px;font-weight:650}.support-qr-wrap.is-error{background:#2a1f24;border-color:#ffb5d250;min-height:120px;padding:18px}.support-qr-wrap canvas{display:block;width:200px;height:200px;border-radius:8px}.support-qr-wrap canvas[hidden]{display:none!important}.support-qr-fallback{margin:0;font-size:13px;font-weight:650;color:#ffb5d2;line-height:1.45;text-align:center}.support-pay-meta{margin:0 0 12px;font-size:12px;color:var(--muted);line-height:1.5}.support-pay-meta strong{color:var(--text);font-weight:800}.support-open-app{width:100%;margin-bottom:8px}.support-back-btn{width:100%;margin-top:4px}.support-popover label{display:block;font-size:12px;font-weight:750;color:#c5cad8;margin-bottom:8px}.support-amount-row{display:flex;align-items:stretch;border:2px solid #41465c;border-radius:10px;background:#252a3b;overflow:hidden;margin-bottom:10px}.support-amount-row span{display:flex;align-items:center;padding:0 12px;font-weight:800;color:var(--mint);border-right:1px solid #ffffff14;background:#ffffff06}.support-amount-row input{flex:1;min-width:0;border:0;background:transparent;color:var(--text);font-size:16px;font-weight:700;padding:11px 12px;font-family:inherit}.support-amount-row input:focus{outline:none}.support-amount-row:focus-within{border-color:#a8f3c860}.support-popover-status{margin:0 0 10px;font-size:12px;font-weight:650;min-height:1.1em}.support-popover-status.is-error{color:#ffb5d2}.support-popover-status.is-info{color:var(--mint)}.support-popover-actions{display:flex;gap:8px;justify-content:flex-end}.support-device-hint{margin:10px 0 0;font-size:11px;color:#858da4;line-height:1.45}.support-popover-title{margin:0 0 12px;font-size:14px;font-weight:800;color:var(--text)}
 .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #ffffff20;background:#ffffff08;border-radius:999px;color:var(--mint);font-size:12px;font-weight:750;letter-spacing:.06em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--mint);border-radius:2px;box-shadow:0 0 12px #a8f3c8;animation:pulse-dot 2.2s ease-in-out infinite}
 @keyframes fade-up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@keyframes float-y{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes bobble{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-5px) rotate(.6deg)}}@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(1.2)}}@keyframes stage-glow{0%,100%{box-shadow:0 30px 80px #0004}50%{box-shadow:0 34px 90px #a8f3c814,0 30px 80px #0004}}@keyframes bg-shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 body{background-size:120% 120%;animation:bg-shift 18s ease-in-out infinite alternate}
@@ -36,15 +36,14 @@ section{padding:64px 0}.section-head{text-align:center;max-width:700px;margin:0 
 .cta .platform-actions{justify-content:center;margin-top:8px}
 .cta{padding:44px;border:1px solid #a8f3c840;border-radius:24px;background:radial-gradient(ellipse at 100% 0%,#a8f3c81a,transparent 55%),#1a1e2b;text-align:center;box-shadow:6px 6px 0 #0003}.cta h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.05em;margin:0 0 10px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:560px}
 footer{padding:32px 0 42px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#858da4;font-size:12px}.footer-brand{color:var(--text);font-weight:800}
-@media(max-width:800px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:28px}.hero-copy{text-align:center}.lead{margin:auto}.platform-actions{justify-content:center}.stage{min-height:400px}.character{height:360px}.features{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr}.friends{grid-template-columns:1fr}.friend-card{min-height:340px}.friend-card img{height:315px}}
-@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.hero h1{font-size:46px}.features{grid-template-columns:1fr}.stage{min-height:360px}.character{height:330px}.bubble{left:12px;top:15px;max-width:185px;font-size:12px}.float-tag{right:10px;bottom:10px}.cta{padding:30px 20px}.friend-card{min-height:310px}.friend-card img{height:290px}}
+@media(max-width:800px){.nav{display:none}.hero{grid-template-columns:1fr;padding-top:36px;gap:28px}.hero-copy{text-align:center}.lead{margin:auto}.platform-actions,.hero-primary-actions{justify-content:center}.support-popover{left:50%;transform:translateX(-50%)}.stage{min-height:400px}.character{height:360px}.features{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr}.friends{grid-template-columns:1fr}.friend-card{min-height:340px}.friend-card img{height:315px}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.hero h1{font-size:46px}.features{grid-template-columns:1fr}.stage{min-height:360px}.character{height:330px}.bubble{left:12px;top:15px;max-width:185px;font-size:12px}.float-tag{right:10px;bottom:10px}.cta{padding:30px 20px}.hero-primary-actions{width:100%}.hero-primary-actions .btn.support-trigger,.hero-primary-actions .support-popover-wrap{flex:1 1 auto}.friend-card{min-height:310px}.friend-card img{height:290px}}
 </style>
 </head>
 <body>
 <header class="wrap">
   <a class="brand" href="#" aria-label="Reminder Companion home"><span class="logo">✦</span><span>Reminder Companion<small>A little buddy for better habits</small></span></a>
   <nav class="nav"><a href="#features">Features</a><a href="#friends">Meet your buddies</a><a href="#how">How it works</a></nav>
-  <a class="btn" data-analytics-download href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449L9.688 2.12v9.166H0V3.449zm0 10.228V13.5h9.688v8.332L0 13.677zM10.813 2.012L24 0v11.333H10.813V2.012zm0 11.555H24V24l-13.187-1.876V13.567z"/></svg>Get for Windows</a>
 </header>
 <main>
   <div class="wrap hero">
@@ -53,7 +52,43 @@ footer{padding:32px 0 42px;display:flex;justify-content:space-between;gap:20px;f
       <h1>Small reminders.<br><span>Better you.</span></h1>
       <p class="lead">Meet your tiny desktop companion — friendly animated characters that nudge you to drink water, take a pause, and build a healthier routine without breaking your flow.</p>
       <div class="platform-actions">
-        <a class="btn" data-analytics-download href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449L9.688 2.12v9.166H0V3.449zm0 10.228V13.5h9.688v8.332L0 13.677zM10.813 2.012L24 0v11.333H10.813V2.012zm0 11.555H24V24l-13.187-1.876V13.567z"/></svg>Download for Windows</a>
+        <div class="hero-primary-actions">
+          <a class="btn" data-analytics-download href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449L9.688 2.12v9.166H0V3.449zm0 10.228V13.5h9.688v8.332L0 13.677zM10.813 2.012L24 0v11.333H10.813V2.012zm0 11.555H24V24l-13.187-1.876V13.567z"/></svg>Download for Windows</a>
+          <div class="support-popover-wrap">
+            <button type="button" class="btn support-trigger" id="hero-support-toggle" aria-expanded="false" aria-controls="hero-support-popover" aria-haspopup="dialog">Buy me a coffee ☕</button>
+            <div class="support-popover" id="hero-support-popover" role="dialog" aria-labelledby="hero-support-title" hidden>
+              <form id="hero-support-form" novalidate>
+                <div class="support-step" id="hero-support-step-amount">
+                  <p id="hero-support-title" class="support-popover-title">Contribution (INR)</p>
+                  <label for="hero-support-amount">Enter amount</label>
+                  <div class="support-amount-row">
+                    <span aria-hidden="true">₹</span>
+                    <input type="text" inputmode="decimal" id="hero-support-amount" name="amount" placeholder="0.00" autocomplete="off" aria-describedby="hero-support-status hero-support-device-hint">
+                  </div>
+                  <p class="support-popover-status" id="hero-support-status" role="status" aria-live="polite"></p>
+                  <div class="support-popover-actions">
+                    <button type="button" class="btn secondary compact" id="hero-support-cancel">Cancel</button>
+                    <button type="submit" class="btn compact">Continue</button>
+                  </div>
+                  <p class="support-device-hint" id="hero-support-device-hint">On desktop, you’ll get a scannable QR code. On mobile, you can open your UPI app if installed.</p>
+                </div>
+                <div class="support-step" id="hero-support-step-pay" hidden>
+                  <p class="support-popover-title" id="hero-support-pay-title">Pay with UPI</p>
+                  <p class="support-qr-instruction">Scan this QR code with any compatible UPI app to pay.</p>
+                  <div class="support-qr-wrap is-loading" id="hero-support-qr-wrap" aria-live="polite">
+                    <canvas id="hero-support-qr" width="200" height="200" role="img" aria-label="UPI payment QR code" hidden></canvas>
+                    <p class="support-qr-fallback" id="hero-support-qr-loading">Generating QR code…</p>
+                    <p class="support-qr-fallback" id="hero-support-qr-error" hidden></p>
+                  </div>
+                  <p class="support-pay-meta" id="hero-support-pay-meta"></p>
+                  <button type="button" class="btn compact support-open-app" id="hero-support-open-app">Open in UPI app</button>
+                  <button type="button" class="btn secondary compact support-back-btn" id="hero-support-back">Change amount</button>
+                  <p class="support-device-hint">Scanning or opening a UPI link does not confirm payment here—you finish in your UPI app.</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>macOS<span class="soon-badge">Coming soon</span></span>
         <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.8 0-7 2.4-7.5 6.2-.4 3.2 1.2 5.8 3 7.2l-1.2 5.2c-.1.5.3 1 .9 1h9.6c.6 0 1-.5.9-1L16 15.4c1.8-1.4 3.4-4 3-7.2C18.5 4.4 15.8 2 12 2zm-2.2 7.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm4.4 0a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4z"/></svg>Linux<span class="soon-badge">Coming soon</span></span>
       </div>
@@ -94,9 +129,9 @@ footer{padding:32px 0 42px;display:flex;justify-content:space-between;gap:20px;f
   </div></section>
   <section><div class="wrap cta reveal"><h2>Your next sip starts here. 💧</h2><p>Give your workday a little more personality. Meet your desktop buddy and make hydration reminders something you don’t mind seeing.</p>
     <div class="platform-actions">
-      <a class="btn" data-analytics-download href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449L9.688 2.12v9.166H0V3.449zm0 10.228V13.5h9.688v8.332L0 13.677zM10.813 2.012L24 0v11.333H10.813V2.012zm0 11.555H24V24l-13.187-1.876V13.567z"/></svg>Download for Windows</a>
-      <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>macOS<span class="soon-badge">Coming soon</span></span>
-      <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.8 0-7 2.4-7.5 6.2-.4 3.2 1.2 5.8 3 7.2l-1.2 5.2c-.1.5.3 1 .9 1h9.6c.6 0 1-.5.9-1L16 15.4c1.8-1.4 3.4-4 3-7.2C18.5 4.4 15.8 2 12 2zm-2.2 7.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm4.4 0a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4z"/></svg>Linux<span class="soon-badge">Coming soon</span></span>
+      <!-- <a class="btn" data-analytics-download href="https://github.com/arjunmmenon-dev/reminder-companion-releases/releases/download/0.1.0/Reminder.companion_0.1.0_x64-setup.exe"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M0 3.449L9.688 2.12v9.166H0V3.449zm0 10.228V13.5h9.688v8.332L0 13.677zM10.813 2.012L24 0v11.333H10.813V2.012zm0 11.555H24V24l-13.187-1.876V13.567z"/></svg>Download for Windows</a> -->
+      <!-- <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>macOS<span class="soon-badge">Coming soon</span></span> -->
+      <!-- <span class="btn secondary soon" aria-disabled="true"><svg class="os-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2c-3.8 0-7 2.4-7.5 6.2-.4 3.2 1.2 5.8 3 7.2l-1.2 5.2c-.1.5.3 1 .9 1h9.6c.6 0 1-.5.9-1L16 15.4c1.8-1.4 3.4-4 3-7.2C18.5 4.4 15.8 2 12 2zm-2.2 7.5a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4zm4.4 0a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4z"/></svg>Linux<span class="soon-badge">Coming soon</span></span> -->
     </div>
   </div></section>
 </main>
@@ -115,6 +150,229 @@ footer{padding:32px 0 42px;display:flex;justify-content:space-between;gap:20px;f
   if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){document.querySelectorAll(".reveal").forEach(function(el){el.classList.add("in-view");});return;}
   var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in-view");io.unobserve(e.target);}});},{threshold:.12,rootMargin:"0px 0px -5% 0px"});
   document.querySelectorAll(".reveal").forEach(function(el){io.observe(el);});
+})();
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js" id="qrcode-lib"></script>
+<script>
+(function () {
+  var QR_LIB_URL = "https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js";
+  var YOUR_UPI_ID = "ammenon33-2@oksbi";
+  var UPI_MAX_AMOUNT = 100000;
+  var PAYEE_NAME = "Reminder Companion";
+  var PAYMENT_NOTE = "Support Reminder Companion";
+
+  var toggle = document.getElementById("hero-support-toggle");
+  var popover = document.getElementById("hero-support-popover");
+  var form = document.getElementById("hero-support-form");
+  var stepAmount = document.getElementById("hero-support-step-amount");
+  var stepPay = document.getElementById("hero-support-step-pay");
+  var amountInput = document.getElementById("hero-support-amount");
+  var statusEl = document.getElementById("hero-support-status");
+  var cancelBtn = document.getElementById("hero-support-cancel");
+  var backBtn = document.getElementById("hero-support-back");
+  var openAppBtn = document.getElementById("hero-support-open-app");
+  var qrWrap = document.getElementById("hero-support-qr-wrap");
+  var qrCanvas = document.getElementById("hero-support-qr");
+  var qrLoading = document.getElementById("hero-support-qr-loading");
+  var qrError = document.getElementById("hero-support-qr-error");
+  var payMeta = document.getElementById("hero-support-pay-meta");
+  var wrap = toggle && toggle.closest(".support-popover-wrap");
+  var activeUpiUri = "";
+  var qrRenderToken = 0;
+
+  if (!toggle || !popover || !form || !amountInput || !stepAmount || !stepPay) return;
+
+  function isLikelyMobile() {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+
+  function setStatus(message, type) {
+    statusEl.textContent = message;
+    statusEl.classList.remove("is-error", "is-info");
+    if (type) statusEl.classList.add(type === "error" ? "is-error" : "is-info");
+  }
+
+  function showAmountStep() {
+    stepAmount.hidden = false;
+    stepPay.hidden = true;
+    popover.classList.remove("is-pay");
+    activeUpiUri = "";
+    setStatus("", null);
+  }
+
+  function setOpen(open) {
+    popover.hidden = !open;
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    if (open) {
+      showAmountStep();
+      amountInput.focus();
+    }
+  }
+
+  function validateAmount(raw) {
+    var value = String(raw).trim();
+    if (!value) return { ok: false, message: "Please enter an amount." };
+    if (!/^\d+(\.\d{1,2})?$/.test(value)) {
+      return { ok: false, message: "Use up to 2 decimal places." };
+    }
+    var amount = parseFloat(value);
+    if (!isFinite(amount) || amount <= 0) {
+      return { ok: false, message: "Amount must be greater than zero." };
+    }
+    if (amount > UPI_MAX_AMOUNT) {
+      return { ok: false, message: "Maximum is ₹1,00,000." };
+    }
+    return { ok: true, amount: amount.toFixed(2) };
+  }
+
+  function buildUpiUri(amount) {
+    var params = new URLSearchParams();
+    params.set("pa", YOUR_UPI_ID);
+    params.set("pn", PAYEE_NAME);
+    params.set("am", amount);
+    params.set("cu", "INR");
+    params.set("tn", PAYMENT_NOTE);
+    return "upi://pay?" + params.toString();
+  }
+
+  function setQrState(state, message) {
+    if (!qrWrap) return;
+    qrWrap.classList.remove("is-loading", "is-ready", "is-error");
+    qrWrap.classList.add("is-" + state);
+    if (qrLoading) qrLoading.hidden = state !== "loading";
+    if (qrError) {
+      qrError.hidden = state !== "error";
+      qrError.textContent = message || "";
+    }
+    if (qrCanvas) qrCanvas.hidden = state !== "ready";
+  }
+
+  function loadQrLibrary() {
+    if (typeof QRCode !== "undefined") return Promise.resolve(true);
+    var tag = document.getElementById("qrcode-lib");
+    if (tag) {
+      return new Promise(function (resolve) {
+        if (typeof QRCode !== "undefined") {
+          resolve(true);
+          return;
+        }
+        tag.addEventListener("load", function () { resolve(typeof QRCode !== "undefined"); }, { once: true });
+        tag.addEventListener("error", function () { resolve(false); }, { once: true });
+      });
+    }
+    return new Promise(function (resolve) {
+      var s = document.createElement("script");
+      s.id = "qrcode-lib";
+      s.src = QR_LIB_URL;
+      s.async = true;
+      s.onload = function () {
+        s.setAttribute("data-loaded", "1");
+        resolve(typeof QRCode !== "undefined");
+      };
+      s.onerror = function () { resolve(false); };
+      document.head.appendChild(s);
+    });
+  }
+
+  function renderQr(uri) {
+    var token = ++qrRenderToken;
+    setQrState("loading");
+    return loadQrLibrary().then(function (loaded) {
+      if (token !== qrRenderToken) return false;
+      if (!loaded) return false;
+      return new Promise(function (resolve) {
+        var size = 200;
+        qrCanvas.width = size;
+        qrCanvas.height = size;
+        QRCode.toCanvas(qrCanvas, uri, {
+          width: size,
+          margin: 2,
+          color: { dark: "#10121a", light: "#ffffff" }
+        }, function (err) {
+          if (token !== qrRenderToken) {
+            resolve(false);
+            return;
+          }
+          if (err) {
+            resolve(false);
+            return;
+          }
+          setQrState("ready");
+          resolve(true);
+        });
+      });
+    });
+  }
+
+  function showPayStep(amount, uri) {
+    activeUpiUri = uri;
+    payMeta.innerHTML =
+      "<strong>₹" + amount + "</strong> · Payee: <strong>" + YOUR_UPI_ID + "</strong><br>" +
+      "Purpose: " + PAYMENT_NOTE;
+    stepAmount.hidden = true;
+    stepPay.hidden = false;
+    popover.classList.add("is-pay");
+    openAppBtn.textContent = isLikelyMobile()
+      ? "Open in UPI app (if installed)"
+      : "Try opening in UPI app";
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(popover.hidden);
+  });
+
+  cancelBtn.addEventListener("click", function () {
+    setOpen(false);
+  });
+
+  backBtn.addEventListener("click", function () {
+    showAmountStep();
+    amountInput.focus();
+  });
+
+  openAppBtn.addEventListener("click", function () {
+    if (!activeUpiUri) return;
+    window.location.href = activeUpiUri;
+  });
+
+  document.addEventListener("click", function (e) {
+    if (popover.hidden || !wrap) return;
+    if (!wrap.contains(e.target)) setOpen(false);
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !popover.hidden) setOpen(false);
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    setStatus("", null);
+
+    if (!YOUR_UPI_ID.trim() || YOUR_UPI_ID === "YOUR_UPI_ID") {
+      setStatus("Replace YOUR_UPI_ID in the page script with your UPI ID.", "error");
+      return;
+    }
+
+    var check = validateAmount(amountInput.value);
+    if (!check.ok) {
+      setStatus(check.message, "error");
+      amountInput.focus();
+      return;
+    }
+
+    var uri = buildUpiUri(check.amount);
+    showPayStep(check.amount, uri);
+    setQrState("loading");
+
+    renderQr(uri).then(function (ok) {
+      if (!ok) {
+        setQrState(
+          "error",
+          "Could not generate QR code. Check your connection, then use “Open in UPI app” or change amount and try again."
+        );
+      }
+    });
+  });
 })();
 </script>
 </body></html>
